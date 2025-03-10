@@ -61,8 +61,8 @@ importers:
         specifier: ^1.11.7
         version: 1.11.7
       '@swc/core-linux-x64-musl':
-        specifier: ^1.11.7
-        version: 1.11.7
+        specifier: ^1.11.8
+        version: 1.11.8
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.8.0
@@ -1347,6 +1347,12 @@ packages:
 
   '@swc/core-linux-x64-musl@1.11.7':
     resolution: {integrity: sha512-mYT6FTDZyYx5pailc8xt6ClS2yjKmP8jNHxA9Ce3K21n5qkKilI5M2N7NShwXkd3Ksw3F29wKrg+wvEMXTRY/A==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [linux]
+
+  '@swc/core-linux-x64-musl@1.11.8':
+    resolution: {integrity: sha512-294k8cLpO103++f4ZUEDr3vnBeUfPitW6G0a3qeVZuoXFhFgaW7ANZIWknUc14WiLOMfMecphJAEiy9C8OeYSw==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
@@ -3286,8 +3292,8 @@ packages:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
 
-  lru.min@1.1.1:
-    resolution: {integrity: sha512-FbAj6lXil6t8z4z3j0E5mfRlPzxkySotzUHwRXjlpRh10vc6AI6WN62ehZj82VG7M20rqogJ0GLwar2Xa05a8Q==}
+  lru.min@1.1.2:
+    resolution: {integrity: sha512-Nv9KddBcQSlQopmBHXSsZVY5xsdlZkdH/Iey0BlcBYggMd4two7cZnKOK9vmy3nY0O5RGH99z1PCeTpPqszUYg==}
     engines: {bun: '>=1.0.0', deno: '>=1.30.0', node: '>=8.0.0'}
 
   magic-string@0.30.17:
@@ -5837,6 +5843,9 @@ snapshots:
   '@swc/core-linux-x64-musl@1.11.7':
     optional: true
 
+  '@swc/core-linux-x64-musl@1.11.8':
+    optional: true
+
   '@swc/core-win32-arm64-msvc@1.11.7':
     optional: true
 
@@ -8106,7 +8115,7 @@ snapshots:
   lru-cache@7.18.3:
     optional: true
 
-  lru.min@1.1.1:
+  lru.min@1.1.2:
     optional: true
 
   magic-string@0.30.17:
@@ -8227,7 +8236,7 @@ snapshots:
       generate-function: 2.3.1
       iconv-lite: 0.6.3
       long: 5.3.1
-      lru.min: 1.1.1
+      lru.min: 1.1.2
       named-placeholders: 1.1.3
       seq-queue: 0.0.5
       sqlstring: 2.3.3
